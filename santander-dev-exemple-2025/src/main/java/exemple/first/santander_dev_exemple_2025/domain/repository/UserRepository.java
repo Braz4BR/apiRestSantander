@@ -1,5 +1,10 @@
 package exemple.first.santander_dev_exemple_2025.domain.repository;
 
-public interface UserRepository {
+import exemple.first.santander_dev_exemple_2025.domain.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserRepository extends JpaRepository<User,Long>{
 
 }
